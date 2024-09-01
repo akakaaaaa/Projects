@@ -1,0 +1,324 @@
+body {
+    height: 100vh;
+    background-color: #0B0D17;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-family: "Bellefair", serif;
+    font-weight: 200;
+    font-style: normal;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 250px;
+    position: relative;
+    overflow-x: hidden; 
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 100%;
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.destination-menu-items:first-of-type {
+    opacity: 100%;
+    color: white;
+    border-bottom: 3.5px solid white !important;
+}
+
+/* .img-container {
+    position: absolute;
+    z-index: -1;
+    height: 100%; 
+    width: 95%;
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(95%) contrast(95%);
+} */
+
+
+.menu-items:nth-of-type(2) {
+    border-bottom: 3.5px solid white !important;
+}
+
+
+.navBar {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    height: 136px;
+}
+
+
+.navBar img {
+    width: 48px;
+    height: 48px;
+    align-self: center;
+    padding-left: 50px;
+    order: 0;
+}
+
+.menu{
+    display: flex;
+    align-items: start;
+    gap: 50px;
+    width: 736px;
+    height: 96px;
+    align-self: flex-end;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    background: rgba(255, 255, 255, 0.05);
+    order: 2;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-items {
+    letter-spacing: 2px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 80%;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3.5px solid rgba(255, 255, 255, 0);
+    z-index: 1;
+    transition: border-bottom 0.5s ease;
+}
+
+
+
+.menu-items:hover {
+    border-bottom: 3.5px solid rgba(255, 255, 255, 1);
+}
+
+.menu-items span{
+    font-weight: 700;
+    margin-right: 10px;
+    letter-spacing: 3px;
+}
+
+.spacediv {
+    width: 100px;
+}
+
+.line {
+    width: 560px;
+    height: 1px;
+    background-color: #979797;
+    position: relative;
+    align-self: center;
+    left: 50px;
+    z-index: 3;
+    opacity: 50%;
+    order: 1;
+}
+
+.destination-h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 357px;
+    height: 34px;
+    margin: 0;
+}
+
+.destination-h1 span {
+    margin-right: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    opacity: 40%;
+}
+
+.main {
+    width: 1110px;
+    height: 792px;
+    display: flex;
+    margin: 0;
+    width: 1110px;
+    position: relative;
+    flex-direction: column;
+    gap: 0;
+}
+
+.destination {
+    display: flex;
+    width: 1110px;
+    height: 734px;
+}
+
+.moon {
+    display: flex;
+    width: 539px;
+    height: 734px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text {
+    width: 539px;
+    height: 734px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.main-text-div {
+    width: 445px;
+    height: 468px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.destination-menu {
+    height: 32px;
+    width: 445px;
+    display: flex;
+    gap: 30px;
+}
+.destination-name {
+    width: 445px;
+    height: 110px;
+}
+
+.destination-text {
+    width: 445px;
+    height: 128px;
+}
+
+.destination-line {
+    height: 1px;
+    width: 445px;
+    background-color: white;
+    opacity: 25%;
+}
+
+.destination-info {
+    width: 445px;
+    height: 61px;
+    display: flex;
+    gap: 50px;
+}
+
+.destination-menu-items {
+    letter-spacing: 2px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3.5px solid transparent;
+    transition: border-bottom 0.5s ease, color 0.5s ease;
+    text-transform: uppercase;
+    color: white;
+}
+
+.destination-menu-items:hover {
+    border-bottom: 3.5px solid rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.name-h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: 200;
+    font-style: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.destination-text {
+    color: #D0D6F9;
+    font-size: 15px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 180%;
+    margin: 0;
+    opacity: 80%;
+}
+
+.distance {
+    width: 210.5px;
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+.distance-header {
+    font-size: 15px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-style: normal;
+    color: #D0D6F9;
+}
+
+.distance-km {
+    font-size: 30px;
+    margin: 0;
+}
+
+.travel-time {
+    font-size: 30px;
+    margin: 0;
+}
+
+.travel {
+    width: 210.5px;
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+.travel-header {
+    font-size: 15px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-style: normal;
+    color: #D0D6F9;
+}
+
+@keyframes fadeIn {
+    from {border-bottom: 3.5px solid rgba(255, 255, 255, 0);}
+    to {border-bottom: 3.5px solid rgba(255, 255, 255, 1);}
+}
+
+@keyframes fadeOut {
+    from {border-bottom: 3.5px solid rgba(255, 255, 255, 1);}
+    to {border-bottom: 3.5px solid rgba(255, 255, 255, 0);}
+}

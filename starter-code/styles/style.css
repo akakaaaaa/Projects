@@ -1,0 +1,291 @@
+body {
+    height: 100vh;
+    background-color: #0B0D17;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-family: "Bellefair", serif;
+    font-weight: 200;
+    font-style: normal;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 250px;
+    position: relative;
+    overflow-x: hidden; 
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 100%;
+    background-image: url('../assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+.navBar {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    height: 136px;
+}
+
+.navBar img {
+    width: 48px;
+    height: 48px;
+    align-self: center;
+    padding-left: 50px;
+    order: 0;
+}
+
+.menu{
+    display: flex;
+    align-items: start;
+    gap: 50px;
+    width: 736px;
+    height: 96px;
+    align-self: flex-end;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    background: rgba(255, 255, 255, 0.05);
+    order: 2;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.menu-items {
+    letter-spacing: 2px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 80%;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3.5px solid rgba(255, 255, 255, 0);
+    z-index: 1;
+    transition: border-bottom 0.5s ease;
+}
+
+
+.menu-items:first-of-type {
+    border-bottom: 3.5px solid white !important;
+}
+
+.menu-items:hover {
+    border-bottom: 3.5px solid rgba(255, 255, 255, 1);
+}
+
+.menu-items span{
+    font-weight: 700;
+    margin-right: 10px;
+    letter-spacing: 3px;
+}
+
+.spacediv {
+    width: 100px;
+}
+
+.line {
+    width: 560px;
+    height: 1px;
+    background-color: #979797;
+    position: relative;
+    align-self: center;
+    left: 50px;
+    z-index: 3;
+    opacity: 50%;
+    order: 1;
+}
+
+.main {
+    display: flex;
+    align-items: end;
+    width: 1110px;
+    height: 632;
+    margin-top: 400px;
+}
+
+.main-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+    height: 343px;
+    align-items: center;
+}
+
+.main-p-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 540px;
+    height: 343px;
+    z-index: 1;
+    color: white;
+}
+
+.main-p1 {
+    height: 34px;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 4px;
+    font-size: 28px;
+    color: #D0D6F9;
+    margin: 0;
+}
+
+.main-h1 {
+    width: 540px;
+    height: 165px;
+    font-size: 144px;
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main-p2 {
+    width: 540px;
+    height: 96px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 180%;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #D0D6F9;
+    letter-spacing: 1px;
+}
+
+
+
+.bellefair-regular {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .button {
+    width: 272px;
+    height: 272px;
+    border-radius: 50%;
+    color: #0B0D17;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    transition: color 0.7s ease;
+    cursor: pointer;
+  }
+
+  .button-shadow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 430px;
+    height: 430px;
+    transition: background-color 0.7s ease;
+  }
+
+  .button-shadow:hover {
+    
+        background-color: rgba(255, 255, 255, 0.2);
+    
+
+        .button {
+            color: rgb(108, 108, 108)
+        }
+  }
+
+@keyframes fadeIn {
+    from {border-bottom: 3.5px solid rgba(255, 255, 255, 0);}
+    to {border-bottom: 3.5px solid rgba(255, 255, 255, 1);}
+}
+
+@keyframes fadeOut {
+    from {border-bottom: 3.5px solid rgba(255, 255, 255, 1);}
+    to {border-bottom: 3.5px solid rgba(255, 255, 255, 0);}
+}
+
+@media (max-width: 768px) and (min-width: 375px){
+
+    body {
+        width: 100vw;
+    }
+
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        height: 100%;
+        background-image: url('../assets/home/background-home-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .navBar {
+        display: flex;
+        width: 95%;
+    }
+
+    .menu {
+        width: 80%;
+        align-self: center;
+        margin-top: 0;
+        padding-right: 5px;
+    }
+
+    .main-flex {
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .button-shadow {
+        margin-top: 100px;
+    }
+
+    .button {
+        text-transform: uppercase;
+        font-size: 32px;
+    }
+
+    
+}
